@@ -5,116 +5,118 @@ import { motion, useScroll } from "framer-motion";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+
       <motion.div
-        initial={{ x:500, y:1, opacity:1}}
-        animate={{ x:500, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '60vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '30vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>I</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>I</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:700, y:200, opacity:1}}
-        animate={{ x:510, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '61vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '31vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>M</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>M</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:788, y:1, opacity:1}}
-        animate={{ x:550, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '52vw', y: '24vh', opacity: 1 }} // 39
+        animate={{ x: '34vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>F</h1>
-      </motion.div>
-        {/* 여기까지 */}
-      <motion.div
-        initial={{ x:510, y:176, opacity:1}}
-        animate={{ x:560, y:176, opacity:1, rotateZ: 360 }}
-        transition={{
-          duration: 0.8,
-          delay: 1,
-        }}
-      >
-        <h1 style={{color:'white', margin:0}}>E</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>F</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:10, y:30, opacity:1}}
-        animate={{ x:570, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '36vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '35vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>A</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>E</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:50, y:800, opacity:1}}
-        animate={{ x:580, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '38vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '36vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>R</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>A</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:500, y:176, opacity:1}}
-        animate={{ x:590, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '37vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '37vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>L</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>R</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:900, y:1, opacity:1}}
-        animate={{ x:600, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '31vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '38vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>E</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>L</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:100, y:1, opacity:1}}
-        animate={{ x:550, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '31vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '39vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>S</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>E</h1>
       </motion.div>
 
       <motion.div
-        initial={{ x:188, y:1, opacity:1}}
-        animate={{ x:620, y:176, opacity:1, rotateZ: 360 }}
+        initial={{ x: '34vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '40vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
           delay: 1,
         }}
       >
-        <h1 style={{color:'white', margin:0}}>S</h1>
+        <h1 style={{ color: 'white', margin: 0 }}>S</h1>
       </motion.div>
+
+      <motion.div
+        initial={{ x: '35vw', y: '24vh', opacity: 1 }}
+        animate={{ x: '41vw', y: '24vh', opacity: 1, rotateZ: 360 }}
+        transition={{
+          duration: 0.8,
+          delay: 1,
+        }}
+      >
+        <h1 style={{ color: 'white', margin: 0 }}>S</h1>
+      </motion.div>
+
       {/* <Button style={{marginTop:100}} variant="primary">Primary</Button> */}
     </div>
   );
