@@ -5,10 +5,49 @@ import { motion, useScroll } from "framer-motion";
 
 function App() {
   return (
-    <div>
+    <div className='wrap'>
 
-      <motion.div
-        initial={{ x: '60vw', y: '24vh', opacity: 1 }}
+      <div>
+        <h1>
+          <span>I</span>
+          <span>M</span>
+          <span>F</span>
+          <span>E</span>
+          <span>A</span>
+          <span>R</span>
+          <span>L</span>
+          <span>E</span>
+          <span>S</span>
+          <span>S</span>
+        </h1>
+      </div>
+      <div className='box'>
+        <h2>
+          <span>I</span>
+          <span>M</span>
+          <span>F</span>
+          <span>E</span>
+          <span>A</span>
+          <span>R</span>
+          <span>L</span>
+          <span>E</span>
+          <span>S</span>
+          <span>S</span>
+        </h2>
+      </div>
+      {/* <Button style={{marginTop:100}} variant="primary">Primary</Button> */}
+
+
+      {/* <Button style={{marginTop:100}} variant="primary">Primary</Button> */}
+    </div>
+
+  );
+}
+
+export default App;
+
+{/* <motion.div
+        initial={{ x: '40vw', y: '24vh', opacity: 1 }}
         animate={{ x: '30vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
@@ -19,7 +58,7 @@ function App() {
       </motion.div>
 
       <motion.div
-        initial={{ x: '61vw', y: '24vh', opacity: 1 }}
+        initial={{ x: '41vw', y: '24vh', opacity: 1 }}
         animate={{ x: '31vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
@@ -30,7 +69,7 @@ function App() {
       </motion.div>
 
       <motion.div
-        initial={{ x: '52vw', y: '24vh', opacity: 1 }} // 39
+        initial={{ x: '39vw', y: '24vh', opacity: 1 }} // 39
         animate={{ x: '34vw', y: '24vh', opacity: 1, rotateZ: 360 }}
         transition={{
           duration: 0.8,
@@ -115,11 +154,4 @@ function App() {
         }}
       >
         <h1 style={{ color: 'white', margin: 0 }}>S</h1>
-      </motion.div>
-
-      {/* <Button style={{marginTop:100}} variant="primary">Primary</Button> */}
-    </div>
-  );
-}
-
-export default App;
+      </motion.div> */}
