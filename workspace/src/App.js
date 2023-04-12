@@ -1,44 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import { motion, useScroll } from "framer-motion";
 
 function App() {
   return (
-    <div className='wrap'>
-
-      <div>
+    <div className='App'>
+      <div className='title'>
         <h1>
-          <span>I</span>
-          <span>M</span>
-          <span>F</span>
+          <span>T</span>
           <span>E</span>
-          <span>A</span>
-          <span>R</span>
+          <span>S</span>
+          <span>T</span>
+          <span> </span>
+          <span>T</span>
+          <span>I</span>
+          <span>T</span>
           <span>L</span>
           <span>E</span>
           <span>S</span>
           <span>S</span>
         </h1>
       </div>
-      <div className='box'>
-        <h2>
-          <span>I</span>
-          <span>M</span>
-          <span>F</span>
-          <span>E</span>
-          <span>A</span>
-          <span>R</span>
-          <span>L</span>
-          <span>E</span>
-          <span>S</span>
-          <span>S</span>
-        </h2>
-      </div>
-      {/* <Button style={{marginTop:100}} variant="primary">Primary</Button> */}
-
-
-      {/* <Button style={{marginTop:100}} variant="primary">Primary</Button> */}
     </div>
 
   );
