@@ -2,16 +2,17 @@
   text-align: center;
 }
 
+
 h1 span {
   position: relative;
   top: 20px;
   display: inline-block;
-  animation: title;
-  animation-duration: 1s;
-  animation-timing-function:ease-in-out;
-  animation-fill-mode: forwards;
-  
-  font-size: 10vw;
+  opacity: 0;
+
+
+
+
+  font-size: 8vw;
   color: #FFF;
   /* text-shadow: 0 1px 0 #CCC,
                0 2px 0 #CCC,
@@ -25,38 +26,154 @@ h1 span {
                0 10px 10px rgba(0, 0, 0, .4); */
 }
 
-h1 span:nth-child(1) { color: #fff; animation-delay: 100ms;}
-h1 span:nth-child(2) { color: #fff; animation-delay: 200ms;}
-h1 span:nth-child(3) { color: #fff; animation-delay: 300ms;}
-h1 span:nth-child(4) { color: #fff; animation-delay: 400ms;}
-h1 span:nth-child(6) { color: #fff; animation-delay: 500ms;}
-h1 span:nth-child(7) { color: #fff; animation-delay: 600ms;}
-h1 span:nth-child(8) { color: #fff; animation-delay: 700ms;}
-h1 span:nth-child(9) { color: #fff; animation-delay: 800ms;}
-h1 span:nth-child(10) { color: #fff; animation-delay: 900ms;}
-h1 span:nth-child(11) { color: #fff; animation-delay: 1000ms;}
-h1 span:nth-child(12) { color: #fff; animation-delay: 1100ms;}
+h1 span:nth-child(1) {
+  color: #fff;
+  animation: title;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(2) {
+  color: #fff;
+  animation: title_flicker;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+h1 span:nth-child(3) {
+  color: #fff;
+  animation: title;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1300ms;
+}
+
+h1 span:nth-child(4) {
+  color: #fff;
+  animation: title;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(5) {
+  color: #fff;
+  animation: title_flicker;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+h1 span:nth-child(6) {
+  color: #fff;
+  animation: title;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+}
+
+h1 span:nth-child(7) {
+  color: #fff;
+  animation: title;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(8) {
+  color: #fff;
+  animation: title;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(9) {
+  color: #fff;
+  animation: title;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(10) {
+  color: #fff;
+  animation: title;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1900ms;
+}
+
+h1 span:nth-child(11) {
+  color: #fff;
+  animation: title;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(12) {
+  color: #fff;
+  animation: title;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2100ms;
+}
 
 @keyframes title {
-  0%{
-    
-  }
+  0% {}
+
   100% {
-    top: -20px;
-    text-shadow: 0 1px 0 #CCC,
-                 0 2px 0 #CCC,
-                 0 3px 0 #CCC,
-                 0 4px 0 #CCC,
-                 0 5px 0 #CCC,
-                 0 6px 0 #CCC,
-                 0 7px 0 #CCC,
-                 0 8px 0 #CCC,
-                 0 9px 0 #CCC,
-                 0 50px 25px rgba(0, 0, 0, .2);
+    opacity: 1;
+    /* top: -20px;
+    text-shadow: 0 0.1vw 0 #CCC,
+                 0 0.2vw 0 #CCC,
+                 0 0.3vw 0 #CCC,
+                 0 0.4vw 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2); */
   }
 }
 
-.title{
+@keyframes title_flicker {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    /* top: -20px;
+    text-shadow: 0 0.1vw 0 #CCC,
+                 0 0.2vw 0 #CCC,
+                 0 0.3vw 0 #CCC,
+                 0 0.4vw 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 0px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2); */
+  }
+}
+
+.title {
   padding-top: 30vh;
 }
-

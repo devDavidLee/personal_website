@@ -6,20 +6,25 @@ function App() {
   return (
     <div className='App'>
       <div className='title'>
+
         <h1>
-          <span>T</span>
-          <span>E</span>
-          <span>S</span>
-          <span>T</span>
-          <span> </span>
-          <span>T</span>
-          <span>I</span>
-          <span>T</span>
-          <span>L</span>
-          <span>E</span>
-          <span>S</span>
-          <span>S</span>
+          <span>a</span>
+          <span>b</span>
+          <span>c</span>
+          <span>d</span>
+          <span>e</span>
+          <span>f</span>
+          <span>g</span>
+          <span>h</span>
+          <span>i</span>
+          <span>j</span>
+          <span>k</span>
+          <span>l</span>
+          
+
         </h1>
+
+
       </div>
     </div>
 
