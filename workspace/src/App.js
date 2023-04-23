@@ -8,20 +8,23 @@ function App() {
       <div className='title'>
 
         <h1>
-          <span>a</span>
-          <span>b</span>
-          <span>c</span>
-          <span>d</span>
-          <span>e</span>
-          <span>f</span>
-          <span>g</span>
-          <span>h</span>
-          <span>i</span>
-          <span>j</span>
-          <span>k</span>
-          <span>l</span>
-          
-
+          <span>긍정적 성장</span>
+          <span>ESFJ</span>
+          <br></br>
+          <span>학습</span>
+          <span>애자일 방법론</span>
+          <span>인내</span>
+          <br></br>
+          <span>blank</span>
+          <span>호기심과 열정</span>
+          <br></br>
+          <span>높은 목표</span>
+          <br></br>
+          <span>낙관적</span>
+          <span>David</span>
+          <span>도전적</span>
+          <br></br>
+          <span>새로운 시도</span>
         </h1>
 
 
