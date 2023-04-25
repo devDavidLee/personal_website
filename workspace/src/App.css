@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Gugi', cursive;
 }
 
 h1 span {
@@ -24,9 +27,8 @@ h1 span {
 }
 
 h1 span:nth-of-type(1) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 5vw;
+  margin: 2vh;
+  font-size: 5vh;
   color: #fff;
   animation: title;
   animation-timing-function: ease-in-out;
@@ -34,9 +36,8 @@ h1 span:nth-of-type(1) {
 }
 
 h1 span:nth-of-type(2) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 4vw;
+  margin: 2vh;
+  font-size: 4vh;
   color: #fff;
   animation: title_flicker;
   animation-duration: 0.5s;
@@ -46,9 +47,8 @@ h1 span:nth-of-type(2) {
 }
 
 h1 span:nth-of-type(3) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 3vw;
+  margin: 2vh;
+  font-size: 3vh;
   color: #fff;
   animation: title;
   animation-duration: 2s;
@@ -60,7 +60,7 @@ h1 span:nth-of-type(3) {
 h1 span:nth-of-type(4) {
   padding-left: 2vw;
   padding-right: 2vw;
-  font-size: 4vw;
+  font-size: 4vh;
   color: #fff;
   animation: title;
   animation-duration: 2s;
@@ -69,9 +69,8 @@ h1 span:nth-of-type(4) {
 }
 
 h1 span:nth-of-type(5) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 3vw;
+  margin: 2vh;
+  font-size: 3vh;
   color: #fff;
   animation: title_flicker;
   animation-duration: 1.5s;
@@ -81,9 +80,8 @@ h1 span:nth-of-type(5) {
 }
 
 h1 span:nth-of-type(6) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 3vw;
+  margin: 2vh;
+  font-size: 3vh;
   color: #fff;
   animation: title;
   animation-duration: 1s;
@@ -93,9 +91,8 @@ h1 span:nth-of-type(6) {
 }
 
 h1 span:nth-of-type(7) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 3vw;
+  margin: 2vh;
+  font-size: 3vh;
   color: #fff;
   animation: title;
   animation-timing-function: ease-in-out;
@@ -103,9 +100,8 @@ h1 span:nth-of-type(7) {
 }
 
 h1 span:nth-of-type(8) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 5vw;
+  margin: 2vh;
+  font-size: 5vh;
   color: #fff;
   animation: title;
   animation-duration: 1s;
@@ -114,9 +110,8 @@ h1 span:nth-of-type(8) {
 }
 
 h1 span:nth-of-type(9) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 3vw;
+  margin: 2vh;
+  font-size: 3vh;
   color: #fff;
   animation: title;
   animation-duration: 2s;
@@ -125,9 +120,8 @@ h1 span:nth-of-type(9) {
 }
 
 h1 span:nth-of-type(10) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 3vw;
+  margin: 2vh;
+  font-size: 3vh;
   color: #fff;
   animation: title;
   animation-duration: 1s;
@@ -137,9 +131,8 @@ h1 span:nth-of-type(10) {
 }
 
 h1 span:nth-of-type(11) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 3vw;
+  margin: 2vh;
+  font-size: 3vh;
   color: #fff;
   animation: title;
   animation-duration: 2s;
@@ -148,9 +141,8 @@ h1 span:nth-of-type(11) {
 }
 
 h1 span:nth-of-type(12) {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: 5vw;
+  margin: 2vh;
+  font-size: 5vh;
   color: #fff;
   animation: title;
   animation-duration: 1s;
@@ -211,3 +203,25 @@ h1 span:nth-of-type(12) {
 .title {
   padding-top: 25vh;
 }
+
+.svg-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.line {
+  visibility: hidden;
+  stroke: black;
+  stroke-dasharray: 5;
+  stroke-dashoffset: 100;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
